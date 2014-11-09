@@ -20,6 +20,9 @@ Usage
 -----
 
         from floorstream import Floor
+
         floor = Floor(host, port)
+        floor.connect()
+
         data = [[0, 0, 255] for i in xrange(64)] # solid blue
         floor.send(data)
